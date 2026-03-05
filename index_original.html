@@ -1,0 +1,1951 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Company Name Construction &amp; Building Services Mauritius</title>
+    <meta name="description"
+        content="Professional websites, social media & digital marketing in Mauritius. Get a free quote from Lakaz Digital." />
+    <!-- Tailwind removed: all responsive styles use custom CSS below -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: #fff;
+            color: #111;
+            margin: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* NAV */
+        #nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 10px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent !important;
+            backdrop-filter: none !important;
+            transition: background .35s, box-shadow .35s, padding .35s;
+            border-bottom: 1px solid transparent;
+        }
+
+        /* Solid white when scrolled */
+        #nav.scrolled {
+            background: rgba(255, 255, 255, .97) !important;
+            backdrop-filter: blur(16px) !important;
+            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, .08);
+            padding: 8px 32px;
+        }
+
+        /* Nav links — white when over hero */
+        #nav nav a,
+        #nav .nav-phone-btn {
+            color: rgba(255, 255, 255, 0.9);
+            transition: color .2s;
+        }
+
+        #nav nav a:hover {
+            color: #fff;
+        }
+
+        /* Nav links — dark when scrolled (white bg) */
+        #nav.scrolled nav a,
+        #nav.scrolled .nav-phone-btn {
+            color: #555;
+        }
+
+        #nav.scrolled nav a:hover {
+            color: #111;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color .2s;
+        }
+
+        /* Logo — inverted (white) over dark hero */
+        .logo-img {
+            height: 52px;
+            width: auto;
+            max-width: 180px;
+            display: block;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            transition: filter .35s, height .35s;
+        }
+
+        /* Logo — dark (black) on white scrolled bg */
+        #nav.scrolled .logo-img {
+            filter: brightness(0);
+            height: 44px;
+        }
+
+        /* Call button — outline-white over hero */
+        .btn-main {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 10px 20px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-main:hover {
+            background: rgba(255, 255, 255, 0.25);
+            color: #fff;
+        }
+
+        /* Call button — dark on white scrolled bg */
+        #nav.scrolled .btn-main {
+            background: #111;
+            color: #fff;
+            border: 2px solid #111;
+        }
+
+        #nav.scrolled .btn-main:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* WhatsApp green button */
+        .btn-wa-nav {
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 10px 20px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-wa-nav:hover {
+            background: #1ebe5d;
+        }
+
+        /* Hamburger button */
+        #hbg {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.9);
+            transition: color .35s;
+            display: none;
+            line-height: 1;
+            padding: 6px;
+        }
+
+        #nav.scrolled #hbg {
+            color: #111;
+        }
+
+        /* Desktop nav elements — visible on large screens */
+        .nav-desktop {
+            display: flex;
+        }
+
+        /* Mobile menu btn-main — always dark on white bg */
+        #mob .btn-main {
+            background: #111 !important;
+            color: #fff !important;
+            border: 2px solid #111 !important;
+        }
+
+        #mob .btn-main:hover {
+            background: #333 !important;
+        }
+
+        /* ============================================
+           MOBILE (<= 768px): show hamburger, hide desktop links
+           ============================================ */
+        @media (max-width: 768px) {
+            #hbg {
+                display: block;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .nav-desktop {
+                display: none;
+            }
+
+            #nav {
+                padding: 8px 16px;
+            }
+
+            #nav.scrolled {
+                padding: 6px 16px;
+            }
+
+            .logo-img {
+                height: 44px;
+                max-width: 160px;
+            }
+
+            #nav.scrolled .logo-img {
+                height: 38px;
+            }
+
+            #nav.scrolled #hbg {
+                color: #111;
+            }
+        }
+
+
+
+        .hero {
+            min-height: 100vh;
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 24px 80px;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            background-image: url('hero_bg.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.18;
+            z-index: 0;
+        }
+
+
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 .accent {
+            background: linear-gradient(90deg, #a5b4fc, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            color: #9ca3af;
+            font-size: 16px;
+            text-align: center;
+            max-width: 540px;
+            margin: 18px auto 0;
+            line-height: 1.75;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-hero-p {
+            background: #fff;
+            color: #111;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 16px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-hero-p:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, .2);
+        }
+
+        .btn-hero-wa {
+            background: #25D366;
+            color: #fff;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 16px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-hero-wa:hover {
+            transform: translateY(-2px);
+            background: #1ebe5d;
+            box-shadow: 0 12px 40px rgba(37, 211, 102, .35);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 64px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .num {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .hero-stat .lbl {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+
+        /* SECTIONS */
+        .sec {
+            padding: 80px 24px;
+        }
+
+        /* PRODUCT GRID */
+        .prod-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* =====================
+           COMPLETE MOBILE RESPONSIVE
+           ===================== */
+
+        /* Tablet: 1024px */
+        @media (max-width: 1024px) {
+            .prod-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .g4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Small Tablet: 900px */
+        @media (max-width: 900px) {
+            #nav {
+                padding: 8px 20px;
+            }
+
+            #nav.scrolled {
+                padding: 6px 20px;
+            }
+
+            .logo-img {
+                height: 48px;
+            }
+
+            #nav.scrolled .logo-img {
+                height: 42px;
+            }
+
+            .g2,
+            .g3,
+            .g4 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .g2.stack {
+                grid-template-columns: 1fr;
+            }
+
+            .sec {
+                padding: 60px 20px;
+            }
+
+            .cta-banner {
+                padding: 40px 28px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-btns {
+                justify-content: center;
+            }
+        }
+
+        /* Mobile: 768px — hamburger breakpoint */
+        @media (max-width: 768px) {
+            #nav {
+                padding: 8px 16px;
+            }
+
+            #nav.scrolled {
+                padding: 6px 16px;
+            }
+
+            .logo-img {
+                height: 42px;
+                max-width: 150px;
+            }
+
+            #nav.scrolled .logo-img {
+                height: 36px;
+            }
+
+            .prod-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ft-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .hero {
+                padding: 100px 16px 60px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.6rem, 7vw, 2.4rem);
+            }
+
+            .hero-sub {
+                font-size: 14px;
+                margin-top: 14px;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                margin-top: 28px;
+            }
+
+            .btn-hero-p,
+            .btn-hero-wa {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+                font-size: 14px;
+                padding: 14px 24px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+                margin-top: 40px;
+            }
+
+            .hero-stat {
+                padding-left: 0 !important;
+                border-left: none !important;
+            }
+
+            .sec h2 {
+                font-size: clamp(1.5rem, 6vw, 2rem);
+            }
+
+            .sec-sub {
+                font-size: 14px;
+            }
+
+            .g2,
+            .g3,
+            .g4 {
+                grid-template-columns: 1fr;
+            }
+
+            .g2.stack {
+                grid-template-columns: 1fr;
+            }
+
+            .sec {
+                padding: 50px 16px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .why-card {
+                padding: 24px 20px;
+            }
+
+            .cta-banner {
+                padding: 32px 20px;
+                border-radius: 16px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-banner div[style*="font-size:26px"] {
+                font-size: 20px !important;
+            }
+
+            footer {
+                padding: 48px 16px 24px;
+            }
+
+            .ft-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+        }
+
+        /* Small Phone: 480px */
+        @media (max-width: 480px) {
+            .prod-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+            }
+
+            .logo-img {
+                height: 38px;
+                max-width: 140px;
+            }
+
+            .g2[style*="gap:40px"] {
+                gap: 24px !important;
+            }
+
+            .contact-map {
+                height: 280px !important;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sec-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .sec-label {
+            display: inline-block;
+            background: #f0f0ff;
+            color: #4F46E5;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+        }
+
+        .sec-label.dark {
+            background: rgba(79, 70, 229, .15);
+            color: #818cf8;
+        }
+
+        .sec h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            color: #111;
+            line-height: 1.15;
+            margin: 0 0 16px;
+        }
+
+        .sec h2 .ac {
+            color: #4F46E5;
+        }
+
+        .sec-sub {
+            color: #6b7280;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 520px;
+        }
+
+        .sec-dark {
+            background: #0a0a0a;
+        }
+
+        .sec-dark h2 {
+            color: #fff;
+        }
+
+        .sec-dark .sec-sub {
+            color: #9ca3af;
+        }
+
+        .sec-gray {
+            background: #f9fafb;
+        }
+
+        .sec-white {
+            background: #fff;
+        }
+
+        /* CARDS */
+        .card {
+            background: #fff;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 32px;
+            transition: all .3s;
+        }
+
+        .card:hover {
+            border-color: #4F46E5;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(79, 70, 229, .12);
+        }
+
+        .card-dark {
+            background: #141414;
+            border: 1.5px solid #222;
+            border-radius: 20px;
+            padding: 32px;
+            transition: all .3s;
+        }
+
+        .card-dark:hover {
+            border-color: #4F46E5;
+            transform: translateY(-6px);
+        }
+
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            background: #f5f3ff;
+        }
+
+        .icon-box.p {
+            background: #ede9fe;
+        }
+
+        .icon-box.g {
+            background: #d1fae5;
+        }
+
+        .icon-box.o {
+            background: #fef3c7;
+        }
+
+        .icon-box.r {
+            background: #fee2e2;
+        }
+
+        .icon-box.b {
+            background: #dbeafe;
+        }
+
+        /* GRID helpers */
+        .g2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .g3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .g4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .g32 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media(max-width:900px) {
+
+            .g2,
+            .g3,
+            .g4 {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .g2.stack {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width:600px) {
+
+            .g2,
+            .g3,
+            .g4,
+            .g32 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ABOUT SECTION */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            align-items: center;
+        }
+
+        /* Trust pills inside about-grid */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 860px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .trust-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ABOUT trust pills — compact for horizontal row */
+        .trust-pill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 14px;
+            background: #fff;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 14px;
+            margin-bottom: 0;
+        }
+
+        .trust-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: #4F46E5;
+            line-height: 1.2;
+        }
+
+        .trust-lbl {
+            font-size: 11px;
+            color: #374151;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* WHY US */
+        .why-card {
+            background: #fff;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            transition: all .3s;
+        }
+
+        .why-card:hover {
+            border-color: #4F46E5;
+            box-shadow: 0 12px 40px rgba(79, 70, 229, .1);
+            transform: translateY(-4px);
+        }
+
+        .why-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .why-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #111;
+            margin: 0 0 8px;
+        }
+
+        .why-card p {
+            font-size: 13px;
+            color: #6b7280;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        /* TESTIMONIALS */
+        .tcard {
+            background: #fff;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 32px;
+            transition: all .3s;
+        }
+
+        .tcard:hover {
+            border-color: #4F46E5;
+            box-shadow: 0 12px 40px rgba(79, 70, 229, .1);
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .tcard p {
+            font-size: 14px;
+            color: #374151;
+            line-height: 1.75;
+            font-style: italic;
+            margin: 0 0 20px;
+        }
+
+        .avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #4F46E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .avatar.g {
+            background: #059669;
+        }
+
+        .avatar.o {
+            background: #d97706;
+        }
+
+        /* GALLERY */
+        .gal-item {
+            border-radius: 18px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gal-item .bg {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform .4s;
+        }
+
+        .gal-item:hover .bg {
+            transform: scale(1.06);
+        }
+
+        .gal-item .ov {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            opacity: 0;
+            transition: opacity .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 18px;
+        }
+
+        .gal-item:hover .ov {
+            opacity: 1;
+        }
+
+        /* CONTACT */
+        .ci {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 24px;
+            background: #fff;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 16px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #111;
+            transition: all .25s;
+        }
+
+        .ci:hover {
+            border-color: #4F46E5;
+            box-shadow: 0 6px 24px rgba(79, 70, 229, .1);
+        }
+
+        .ci-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+            background: #f5f3ff;
+        }
+
+        .ci-icon.g {
+            background: #d1fae5;
+            color: #059669;
+        }
+
+        .ci-icon.b {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+
+        .ci-icon.o {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background: #f9fafb;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-size: 14px;
+            color: #111;
+            outline: none;
+            transition: border .2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #4F46E5;
+            background: #fff;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #374151;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: #111;
+            color: #fff;
+            font-weight: 800;
+            font-size: 15px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all .25s;
+        }
+
+        .btn-submit:hover {
+            background: #4F46E5;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(79, 70, 229, .3);
+        }
+
+        /* CTA BANNER */
+        .cta-banner {
+            background: #0a0a0a;
+            border-radius: 24px;
+            padding: 60px 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-w {
+            background: #fff;
+            color: #111;
+            font-weight: 800;
+            padding: 14px 28px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            font-size: 14px;
+        }
+
+        .btn-w:hover {
+            background: #f3f4f6;
+        }
+
+        .btn-gw {
+            background: #25D366;
+            color: #fff;
+            font-weight: 800;
+            padding: 14px 28px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s;
+            font-size: 14px;
+        }
+
+        .btn-gw:hover {
+            background: #1ebe5d;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a0a0a;
+            padding: 64px 24px 32px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .ft-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        @media(max-width:700px) {
+            .ft-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ft-head {
+            font-size: 13px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            letter-spacing: .04em;
+        }
+
+        .ft-link {
+            display: block;
+            font-size: 14px;
+            color: #9ca3af;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color .2s;
+        }
+
+        .ft-link:hover {
+            color: #fff;
+        }
+
+        .social-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all .25s;
+            margin-right: 8px;
+        }
+
+        .social-btn:hover {
+            background: #4F46E5;
+            border-color: #4F46E5;
+            color: #fff;
+        }
+
+        .ft-bottom {
+            padding-top: 32px;
+            border-top: 1px solid #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        /* FLOAT WA */
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 200;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 8px 28px rgba(37, 211, 102, .45);
+            transition: transform .25s;
+            animation: wap 2.5s infinite;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.12);
+        }
+
+        @keyframes wap {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, .4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* MOBILE NAV */
+        #mob {
+            display: none;
+            /* hidden on desktop */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s;
+            background: #fff;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 99;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+        }
+
+        /* Show mobile nav only on mobile screens */
+        @media (max-width: 768px) {
+            #mob {
+                display: block;
+            }
+        }
+
+        #mob.open {
+            max-height: 500px;
+        }
+
+        #mob a {
+            display: block;
+            padding: 14px 32px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        #mob a:hover {
+            color: #4F46E5;
+        }
+
+        /* REVEAL */
+        .rv {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .rv.on {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* DIVIDER */
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/23052000000" target="_blank" class="wa-float" aria-label="WhatsApp"><i
+            class="fab fa-whatsapp"></i></a>
+
+    <!-- â•â•â•â•â•â•â•â•â•â• HEADER â•â•â•â•â•â•â•â•â•â• -->
+    <header id="nav">
+        <a href="#home" style="display:flex;align-items:center;">
+            <img src="logo.png" alt="Lakaz Digital" class="logo-img" />
+        </a>
+        <nav class="nav-desktop" style="gap:32px;">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#gallery">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-desktop" style="gap:12px;align-items:center;">
+            <a href="tel:+23052000000" class="btn-main"><i class="fa fa-phone" style="margin-right:6px;"></i>Call
+                Now</a>
+            <a href="https://wa.me/23052000000" target="_blank" class="btn-wa-nav"><i class="fab fa-whatsapp"
+                    style="margin-right:6px;"></i>WhatsApp</a>
+        </div>
+        <button id="hbg" aria-label="Menu"><i class="fa fa-bars" id="hbg-icon"></i></button>
+        <div id="mob">
+            <a href="#home" class="mob-l">Home</a>
+            <a href="#about" class="mob-l">About</a>
+            <a href="#services" class="mob-l">Services</a>
+            <a href="#why-us" class="mob-l">Why Choose Us</a>
+            <a href="#gallery" class="mob-l">Our Work</a>
+            <a href="#contact" class="mob-l">Contact</a>
+            <div style="padding:16px 32px;display:flex;gap:10px;">
+                <a href="tel:+23052000000" class="btn-main" style="flex:1;text-align:center;">Call</a>
+                <a href="https://wa.me/23052000000" target="_blank" class="btn-wa-nav"
+                    style="flex:1;text-align:center;">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â• 1. HERO â•â••â•â•â•â•â•â•â•â• -->
+    <section class="hero" id="home">
+        <div class="hero-bg-img"></div>
+        <div style="position:relative;z-index:2;text-align:center;max-width:900px;">
+            <div
+                style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:8px 20px;font-size:13px;color:#a5b4fc;font-weight:600;margin-bottom:32px;max-width:100%;box-sizing:border-box;white-space:normal;text-align:center;">
+                <span
+                    style="width:8px;height:8px;border-radius:50%;background:#25D366;display:inline-block;flex-shrink:0;animation:wap 2s infinite;"></span>
+                Trusted Construction Company Mauritius
+            </div>
+            <h1>Professional <span class="accent">Construction Services</span><br />in Mauritius</h1>
+            <p class="hero-sub">From foundations to finishing we build homes, offices &amp; commercial spaces with
+                quality craftsmanship and on-time delivery.</p>
+            <div class="hero-btns">
+                <a href="tel:+23052000000" class="btn-hero-p"><i class="fa fa-phone"></i> Call +230 5200 0000</a>
+                <a href="https://wa.me/23052000000" target="_blank" class="btn-hero-wa"><i class="fab fa-whatsapp"
+                        style="font-size:18px;"></i> WhatsApp Us</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="num">250+</div>
+                    <div class="lbl">Projects Completed</div>
+                </div>
+                <div class="hero-stat" style="border-left:1px solid #222;padding-left:40px;">
+                    <div class="num">5</div>
+                    <div class="lbl">Client Rating</div>
+                </div>
+                <div class="hero-stat" style="border-left:1px solid #222;padding-left:40px;">
+                    <div class="num">15+</div>
+                    <div class="lbl">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec-white" id="about">
+        <div class="sec-inner">
+            <div class="about-grid rv">
+                <!-- Text -->
+                <div>
+                    <span class="sec-label">About Us</span>
+                    <h2>Your Trusted <span class="ac">Construction Partner</span></h2>
+                    <p class="sec-sub">Your Company Name is a Mauritius-based construction company with over 15 years of
+                        experience. We handle residential, commercial &amp; industrial projects with top-quality
+                        materials and skilled tradesmen.
+                    </p>
+                    <div class="trust-grid">
+                        <div class="trust-pill rv">
+                            <i class="fa fa-trophy"
+                                style="color:#4F46E5;font-size:22px;width:30px;text-align:center;"></i>
+                            <div>
+                                <div class="trust-num">15+</div>
+                                <div class="trust-lbl">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="trust-pill rv">
+                            <i class="fa fa-star"
+                                style="color:#f59e0b;font-size:22px;width:30px;text-align:center;"></i>
+                            <div>
+                                <div class="trust-num">100%</div>
+                                <div class="trust-lbl">Quality Guaranteed</div>
+                            </div>
+                        </div>
+                        <div class="trust-pill rv">
+                            <i class="fa fa-map-marker-alt"
+                                style="color:#059669;font-size:22px;width:30px;text-align:center;"></i>
+                            <div>
+                                <div class="trust-num">All MU</div>
+                                <div class="trust-lbl">Island Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visual -->
+                <div class="rv" style="background:#f9fafb;border-radius:24px;padding:40px;border:1.5px solid #e5e7eb;">
+                    <div style="font-weight:700;font-size:16px;color:#111;margin-bottom:24px;">What we build for you
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:14px;">
+                        <div
+                            style="display:flex;align-items:center;gap:14px;padding:16px;background:#fff;border-radius:14px;border:1.5px solid #e5e7eb;">
+                            <div
+                                style="width:42px;height:42px;border-radius:12px;background:#ede9fe;display:flex;align-items:center;justify-content:center;">
+                                <i class="fa fa-home" style="color:#4F46E5;font-size:18px;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight:700;font-size:14px;color:#111;">Residential Construction</div>
+                                <div style="font-size:12px;color:#9ca3af;">Villas Houses Apartments</div>
+                            </div>
+                        </div>
+                        <div
+                            style="display:flex;align-items:center;gap:14px;padding:16px;background:#fff;border-radius:14px;border:1.5px solid #e5e7eb;">
+                            <div
+                                style="width:42px;height:42px;border-radius:12px;background:#d1fae5;display:flex;align-items:center;justify-content:center;">
+                                <i class="fa fa-building" style="color:#059669;font-size:18px;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight:700;font-size:14px;color:#111;">Commercial Projects</div>
+                                <div style="font-size:12px;color:#9ca3af;">Offices Warehouses Shops</div>
+                            </div>
+                        </div>
+                        <div
+                            style="display:flex;align-items:center;gap:14px;padding:16px;background:#fff;border-radius:14px;border:1.5px solid #e5e7eb;">
+                            <div
+                                style="width:42px;height:42px;border-radius:12px;background:#fef3c7;display:flex;align-items:center;justify-content:center;">
+                                <i class="fa fa-tools" style="color:#d97706;font-size:18px;"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight:700;font-size:14px;color:#111;">Renovation &amp; Remodelling
+                                </div>
+                                <div style="font-size:12px;color:#9ca3af;">Interior Exterior Roofing</div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-submit"
+                            style="text-align:center;display:block;text-decoration:none;margin-top:8px;">Get a Free
+                            Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- â•â•â•â•â•â•â•â•â•â• 3. SERVICES â•â•â•â•â•â•â•â•â•â• -->
+    <section class="sec sec-gray" id="services">
+        <div class="sec-inner">
+            <div style="text-align:center;margin-bottom:56px;" class="rv">
+                <span class="sec-label">Our Services</span>
+                <h2 style="text-align:center;">Professional <span class="ac">Construction Services</span></h2>
+                <p class="sec-sub" style="margin:12px auto 0;">From groundwork to handover we deliver quality
+                    construction across Mauritius.</p>
+            </div>
+            <div class="g3">
+                <div class="card rv">
+                    <div class="icon-box p"><i class="fa fa-home" style="color:#4F46E5;"></i></div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Residential Construction</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">We build custom villas,
+                        family homes &amp; apartments to your specifications, on time and on budget.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#4F46E5;background:#f0f0ff;padding:5px 12px;border-radius:100px;">Most
+                        Popular</span>
+                </div>
+                <div class="card rv">
+                    <div class="icon-box" style="background:#dbeafe;"><i class="fa fa-building"
+                            style="color:#2563eb;"></i></div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Commercial Projects</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">Offices, warehouses, retail
+                        shops &amp; industrial buildings built to the highest standards.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#2563eb;background:#dbeafe;padding:5px 12px;border-radius:100px;">Fast
+                        Delivery </span>
+                </div>
+                <div class="card rv">
+                    <div class="icon-box o"><i class="fa fa-tools" style="color:#d97706;"></i></div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Renovation &amp; Remodelling</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">Interior &amp; exterior
+                        renovation, kitchen remodels, bathroom upgrades &amp; full property makeovers.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#d97706;background:#fef3c7;padding:5px 12px;border-radius:100px;">Free
+                        Estimate</span>
+                </div>
+                <div class="card rv">
+                    <div class="icon-box" style="background:#fce7f3;"><i class="fa fa-bolt" style="color:#db2777;"></i>
+                    </div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Electrical Works</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">Full electrical
+                        installation, wiring, distribution boards, solar setup &amp; safety inspections.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#db2777;background:#fce7f3;padding:5px 12px;border-radius:100px;">Certified
+                        Team</span>
+                </div>
+                <div class="card rv">
+                    <div class="icon-box g"><i class="fa fa-water" style="color:#059669;"></i></div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Plumbing &amp; Drainage</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">Water supply, drainage
+                        systems, pipe installation, waterproofing &amp; leak repairs.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#059669;background:#d1fae5;padding:5px 12px;border-radius:100px;">24h
+                        Service</span>
+                </div>
+                <div class="card rv">
+                    <div class="icon-box" style="background:#f3e8ff;"><i class="fa fa-hard-hat"
+                            style="color:#7c3aed;"></i></div>
+                    <h3 style="font-size:15px;font-weight:700;margin:0 0 10px;">Roofing &amp; Waterproofing</h3>
+                    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin:0 0 16px;">Roof installation, repair,
+                        thermal insulation &amp; waterproofing for lasting protection.</p>
+                    <span
+                        style="font-size:12px;font-weight:700;color:#7c3aed;background:#f3e8ff;padding:5px 12px;border-radius:100px;">10yr
+                        Warranty</span>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:48px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"
+                class="rv">
+                <a href="#contact" class="btn-main"
+                    style="padding:14px 32px;border-radius:100px;font-size:14px;text-decoration:none;"><i
+                        class="fa fa-file-alt" style="margin-right:8px;"></i>Request a Quote</a>
+                <a href="https://wa.me/23052000000" target="_blank" class="btn-wa-nav"
+                    style="padding:14px 32px;border-radius:100px;font-size:14px;"><i class="fab fa-whatsapp"
+                        style="margin-right:8px;"></i>WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="sec sec-white" id="products">
+        <div class="sec-inner">
+            <div style="text-align:center;margin-bottom:56px;" class="rv">
+                <span class="sec-label">Our Products</span>
+                <h2 style="text-align:center;">Building <span class="ac">Materials &amp; Products</span></h2>
+                <p class="sec-sub" style="margin:12px auto 0;">Quality construction materials available for purchase.
+                    Order easily via WhatsApp no cart, no hassle.</p>
+            </div>
+            <div class="prod-grid">
+
+                <!-- Product 1 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_cement.png" alt="Portland Cement"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Cement</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Portland Cement 50kg
+                        </div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 350 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/bag</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">High-strength Portland cement.
+                            Ideal for foundations, slabs &amp; masonry work.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Portland Cement 50kg @ Rs 350/bag"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_gravel.png" alt="Crushed Gravel"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Aggregate</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Crushed Gravel 1
+                            Ton
+                        </div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 800 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/ton</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">Washed crushed stone aggregate for
+                            concrete mixing, driveways &amp; drainage.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Crushed Gravel 1 Ton @ Rs 800"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_rebar.png" alt="Steel Rebar" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Steel</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Steel Rebar T12 â€“
+                            Bundle</div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 2,500 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/bundle</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">BS4449 deformed steel rebar T12,
+                            12m lengths. For reinforced concrete structures.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Steel Rebar T12 Bundle @ Rs 2500"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_roof_tiles.png" alt="Roof Tiles"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Roofing</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Roof Tile (Terracotta)
+                        </div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 1,200 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/mÂ²</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">Classic terracotta roof tiles.
+                            Durable, weather-resistant &amp; aesthetically pleasing.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Terracotta Roof Tiles @ Rs 1200/m2"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_paint.png" alt="Exterior Paint"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Paint</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Exterior Wall Paint
+                            20L</div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 680 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/bucket</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">Weatherproof exterior paint. UV
+                            resistant, 10-year guarantee. Multiple colours.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Exterior Wall Paint 20L @ Rs 680"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_tiles.png" alt="Porcelain Tiles"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Flooring</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Porcelain Floor Tiles
+                        </div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 950 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/mÂ²</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">60Ã—60cm polished porcelain tiles.
+                            Slip-resistant, easy to clean. Various finishes.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Porcelain Floor Tiles @ Rs 950/m2"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_tiles.png" alt="Hardwood Timber"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Timber</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">Hardwood Timber 3m
+                        </div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 450 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/piece</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">Premium hardwood timber 100Ã—50mm.
+                            Kiln-dried, ideal for formwork &amp; carpentry.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: Hardwood Timber 3m @ Rs 450/piece"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="card rv" style="padding:0;overflow:hidden;">
+                    <div style="height:160px;overflow:hidden;">
+                        <img src="product_tiles.png" alt="PVC Pipes" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div style="padding:18px;">
+                        <div
+                            style="font-size:11px;color:#9ca3af;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;">
+                            Plumbing</div>
+                        <div style="font-size:15px;font-weight:700;color:#111;margin-bottom:4px;">PVC Pipes &amp;
+                            Fittings Set</div>
+                        <div style="font-size:18px;font-weight:800;color:#4F46E5;margin-bottom:8px;">Rs 550 <span
+                                style="font-size:12px;color:#9ca3af;font-weight:400;">/set</span></div>
+                        <div style="font-size:12px;color:#6b7280;margin-bottom:14px;">Complete PVC pipe &amp; fittings
+                            set. 110mm diameter, 3m lengths. For drainage systems.</div>
+                        <a href="https://wa.me/23052000000?text=Hello! I would like to order: PVC Pipes & Fittings Set @ Rs 550"
+                            target="_blank" class="btn-wa-nav"
+                            style="display:block;text-align:center;padding:9px 12px;border-radius:10px;font-size:12px;text-decoration:none;"><i
+                                class="fab fa-whatsapp" style="margin-right:5px;"></i>Order via WhatsApp</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â• 4. WHY US â•â•â•â•â•â•â•â•â•â• -->
+    <section class="sec sec-white" id="why-us">
+        <div class="sec-inner">
+            <div style="text-align:center;margin-bottom:56px;" class="rv">
+                <span class="sec-label">Why Us</span>
+                <h2 style="text-align:center;">Why Choose <span class="ac">Your Company Name?</span></h2>
+                <p class="sec-sub" style="margin:12px auto 0;">We don't just build structures we build trust. Here's
+                    what makes us the top choice in Mauritius.</p>
+            </div>
+            <div class="g4 rv">
+                <div class="why-card">
+                    <span class="why-icon"></span>
+                    <h3>Experienced Team</h3>
+                    <p>15+ years of construction expertise across residential &amp; commercial projects in Mauritius.
+                    </p>
+                </div>
+                <div class="why-card">
+                    <span class="why-icon"></span>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive rates with no hidden costs. Transparent quotes before any work begins.</p>
+                </div>
+                <div class="why-card">
+                    <span class="why-icon"></span>
+                    <h3>On-Time Delivery</h3>
+                    <p>We meet deadlines every time. Your project completed on schedule, guaranteed.</p>
+                </div>
+                <div class="why-card">
+                    <span class="why-icon"></span>
+                    <h3>Quality Guaranteed</h3>
+                    <p>We use premium materials &amp; skilled tradesmen. 100% satisfaction or we make it right.</p>
+                </div>
+            </div>
+            <!-- CTA Banner -->
+            <div class="cta-banner rv" style="margin-top:56px;">
+                <div>
+                    <div style="font-size:26px;font-weight:700;color:#fff;margin-bottom:8px;">Ready to Grow Your
+                        business</div>
+                    <div style="font-size:14px;color:#9ca3af;">Free consultation no pressure, no hidden fees.</div>
+                </div>
+                <div class="cta-btns">
+                    <a href="#contact" class="btn-w"><i class="fa fa-paper-plane" style="margin-right:8px;"></i>Get Free
+                        Quote</a>
+                    <a href="https://wa.me/23052000000" target="_blank" class="btn-gw"><i class="fab fa-whatsapp"
+                            style="margin-right:8px;"></i>WhatsApp Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- â•â•â•â•â•â•â•â•â•â• 5. TESTIMONIALS â•â•â•â•â•â•â•â•â•â• -->
+    <section class="sec sec-gray" id="testimonials">
+        <div class="sec-inner">
+            <div style="text-align:center;margin-bottom:56px;" class="rv">
+                <span class="sec-label">Reviews</span>
+                <h2 style="text-align:center;">What Our Clients <span class="ac">Say</span></h2>
+            </div>
+            <div class="g3 rv">
+                <div class="tcard">
+                    <div class="stars">Miachek</div>
+                    <p>"Lakaz Digital completely transformed our restaurant's online presence. Our bookings doubled
+                        within one month. Very professional and responsive team!"</p>
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div class="avatar">N</div>
+                        <div>
+                            <div style="font-weight:700;font-size:14px;">Nisha Ramkissoon</div>
+                            <div style="font-size:12px;color:#9ca3af;">Restaurant Owner, Curepipe</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="stars">John</div>
+                    <p>"Super fast delivery, extremely professional and the price was perfect for our construction
+                        business. Mo bien rekoman Lakaz Digital!"</p>
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div class="avatar o">K</div>
+                        <div>
+                            <div style="font-weight:700;font-size:14px;">Kevin Mootoosamy</div>
+                            <div style="font-size:12px;color:#9ca3af;">Construction Business, Rose Hill</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="stars">Miachek</div>
+                    <p>"They set up our WhatsApp &amp; Google Ads. Within 1 week we had 3Ã— more enquiries for our
+                        beauty
+                        salon. Best investment we ever made!"</p>
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div class="avatar g">P</div>
+                        <div>
+                            <div style="font-weight:700;font-size:14px;">Priya Soobrun</div>
+                            <div style="font-size:12px;color:#9ca3af;">Beauty Salon, Quatre Bornes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="sec sec-gray" id="contact">
+        <div class="sec-inner">
+            <div style="text-align:center;margin-bottom:56px;" class="rv">
+                <span class="sec-label">Contact</span>
+                <h2 style="text-align:center;">Get a <span class="ac">Free Quote</span> Today</h2>
+                <p class="sec-sub" style="margin:12px auto 0;">Let's talk about your project. We reply within 1 hour
+                    during business hours.</p>
+            </div>
+            <div class="g2 stack rv" style="gap:40px;">
+                <!-- Info -->
+                <div>
+                    <a href="tel:+23052000000" class="ci">
+                        <div class="ci-icon b"><i class="fa fa-phone"></i></div>
+                        <div>
+                            <div style="font-size:12px;color:#9ca3af;font-weight:600;margin-bottom:2px;">Call Us Now
+                            </div>
+                            <div style="font-weight:800;font-size:17px;">+230 5200 0000</div>
+                        </div>
+                        <div
+                            style="margin-left:auto;font-size:12px;font-weight:700;color:#4F46E5;background:#f0f0ff;padding:5px 12px;border-radius:100px;">
+                            Tap to Call</div>
+                    </a>
+                    <a href="https://wa.me/23052000000" target="_blank" class="ci" style="border-color:#e5e7eb;">
+                        <div class="ci-icon g"><i class="fab fa-whatsapp" style="font-size:22px;"></i></div>
+                        <div>
+                            <div style="font-size:12px;color:#9ca3af;font-weight:600;margin-bottom:2px;">WhatsApp Us
+                            </div>
+                            <div style="font-weight:800;font-size:17px;">+230 5200 0000</div>
+                        </div>
+                        <div
+                            style="margin-left:auto;font-size:12px;font-weight:700;color:#059669;background:#d1fae5;padding:5px 12px;border-radius:100px;">
+                            Chat Now</div>
+                    </a>
+                    <a href="mailto:hello@lakazdigital.mu" class="ci">
+                        <div class="ci-icon o"><i class="fa fa-envelope"></i></div>
+                        <div>
+                            <div style="font-size:12px;color:#9ca3af;font-weight:600;margin-bottom:2px;">Email</div>
+                            <div style="font-weight:700;font-size:15px;">hello@lakazdigital.mu</div>
+                        </div>
+                    </a>
+                    <div class="ci" style="cursor:default;">
+                        <div class="ci-icon" style="background:#fee2e2;"><i class="fa fa-map-marker-alt"
+                                style="color:#dc2626;"></i></div>
+                        <div>
+                            <div style="font-size:12px;color:#9ca3af;font-weight:600;margin-bottom:2px;">Location</div>
+                            <div style="font-weight:700;font-size:15px;">Port Louis, Mauritius</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div class="contact-map"
+                    style="border-radius:24px;overflow:hidden;height:450px;border:1.5px solid #e5e7eb;">
+                    <iframe src="https://www.google.com/maps?q=Port%20Louis,%20Mauritius&output=embed" width="100%"
+                        height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â• -->
+    <footer>
+        <div class="footer-inner">
+            <div class="ft-grid">
+                <div>
+                    <div style="margin-bottom:20px;">
+                        <img src="logo.png" alt="Company Logo"
+                            style="height:80px;width:auto;max-width:240px;filter:brightness(0) invert(1);display:block;" />
+                    </div>
+                    <p style="font-size:14px;color:#9ca3af;line-height:1.7;max-width:300px;margin:0 0 24px;">Your
+                        trusted digital partner in Mauritius. Websites, social media, Google Ads &amp; more all in
+                        one
+                        place.</p>
+                    <div>
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/23052000000" target="_blank" class="social-btn" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="ft-head">Quick Links</div>
+                    <a href="#home" class="ft-link">Home</a>
+                    <a href="#about" class="ft-link">About</a>
+                    <a href="#services" class="ft-link">Services</a>
+                    <a href="#why-us" class="ft-link">Why Us</a>
+                    <a href="#contact" class="ft-link">Contact</a>
+                </div>
+                <div>
+                    <div class="ft-head">Get In Touch</div>
+                    <a href="tel:+23052000000" class="ft-link"><i class="fa fa-phone"
+                            style="width:18px;color:#4F46E5;"></i> +230 5200 0000</a>
+                    <a href="https://wa.me/23052000000" target="_blank" class="ft-link"><i class="fab fa-whatsapp"
+                            style="width:18px;color:#25D366;"></i> WhatsApp Us</a>
+                    <a href="mailto:hello@lakazdigital.mu" class="ft-link"><i class="fa fa-envelope"
+                            style="width:18px;color:#d97706;"></i> hello@lakazdigital.mu</a>
+                    <span class="ft-link" style="cursor:default;"><i class="fa fa-map-marker-alt"
+                            style="width:18px;color:#dc2626;"></i> Port Louis, Mauritius</span>
+                </div>
+            </div>
+            <div class="ft-bottom">
+                <span>© 2025 Lakaz Digital. All rights reserved. </span>
+                <span>Website by <a href="#" style="color:#818cf8;font-weight:700;text-decoration:none;">Lakaz
+                        Digital</a> <a href="#" style="color:#6b7280;text-decoration:none;">Privacy Policy</a></span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Sticky nav
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
+
+        // Mobile menu
+        const hbg = document.getElementById('hbg'), mob = document.getElementById('mob'), hbgI = document.getElementById('hbg-icon');
+        hbg.addEventListener('click', () => {
+            mob.classList.toggle('open');
+            hbgI.className = mob.classList.contains('open') ? 'fa fa-times' : 'fa fa-bars';
+        });
+        document.querySelectorAll('.mob-l').forEach(l => l.addEventListener('click', () => {
+            mob.classList.remove('open'); hbgI.className = 'fa fa-bars';
+        }));
+
+        // Scroll reveal
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) { setTimeout(() => e.target.classList.add('on'), i * 80); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+        // Form â†’ WhatsApp
+        function submitForm(e) {
+            e.preventDefault();
+            const n = document.getElementById('fn').value, p = document.getElementById('fp').value, m = document.getElementById('fm').value;
+            window.open(`https://wa.me/23052000000?text=${encodeURIComponent(`Hi Lakaz Digital! ðŸ‘‹\n\nName: ${n}\nPhone: ${p}\nMessage: ${m}`)}`, '_blank');
+            document.getElementById('ok').style.display = 'block';
+            document.getElementById('cform').reset();
+            setTimeout(() => document.getElementById('ok').style.display = 'none', 5000);
+        }
+    </script>
+</body>
+
+</html>

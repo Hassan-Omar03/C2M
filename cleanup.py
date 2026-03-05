@@ -1,0 +1,6 @@
+content = open('f:/template/index.html', encoding='utf-8').read()
+print('why-us sections:', content.count('id="why-us"'))
+print('products sections:', content.count('id="products"'))
+print('Website Design count:', content.count('Website Design'))
+print('Digital Strategy count:', content.count('Digital Strategy'))
+print('Total lines:', content.count('\n'))
